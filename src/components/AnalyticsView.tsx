@@ -14,7 +14,7 @@ export const AnalyticsView: React.FC<AnalyticsViewProps> = ({
   screeningResults,
 }) => {
   const total = candidates.length;
-  const results = Object.values(screeningResults);
+  const results: ScreeningResult[] = Object.values(screeningResults);
 
   const strongFits = results.filter(r => r.fitCategory === 'Strong Fit').length;
   const potentialFits = results.filter(r => r.fitCategory === 'Potential Fit').length;
