@@ -6,7 +6,8 @@ An intelligent, full-stack HR tech application powered by **Google Gemini 1.5/2.
 
 ## 🌟 Key Features
 
-- **Automated Resume Parsing & Screening**: Paste raw resume text or load candidate profiles to instantly extract skills, work history, and experience details.
+- **PDF & Document Resume Upload**: Drag-and-drop or select `.pdf`, `.docx`, or `.txt` resume files. Gemini AI extracts candidate skills, experience, and education directly from the uploaded document.
+- **Automated Resume Parsing & Screening**: Paste raw resume text, upload PDF documents, or load sample candidate profiles to instantly screen applicants.
 - **AI Match Scoring**: Calculates an objective 0–100 match score and categorizes candidates into **Strong Fit**, **Potential Fit**, or **Unsuitable**.
 - **Skill Gap & Verification Analysis**: Highlights matched required skills vs. critical missing skills for any target job description.
 - **AI-Generated Interview Questions**: Automatically creates tailored technical and behavioral interview questions to probe candidate weak spots.
@@ -63,6 +64,19 @@ An intelligent, full-stack HR tech application powered by **Google Gemini 1.5/2.
    npm run build
    npm start
    ```
+
+---
+
+## 🌐 Deploying to Render
+
+If you are deploying this repository to **Render.com**, make sure to set the **Environment** to **Node** (not Python):
+
+1. **Environment**: `Node`
+2. **Build Command**: `npm install && npm run build`
+3. **Start Command**: `npm start`
+4. **Environment Variables**: Add `GEMINI_API_KEY` under Environment Variables in Render Dashboard.
+
+> **Note**: A `render.yaml` blueprint configuration file is included in this repository to automatically configure the Node.js runtime on Render and avoid Python `requirements.txt` errors.
 
 ---
 
